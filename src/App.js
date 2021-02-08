@@ -11,11 +11,10 @@ function App() {
       <Header />
       <Container>
         <Switch>
-          {" "}
           <Route path="/game" component={Game} />
           <Route path="/game" component={HighScores} />
           <Route path="/game" component={GameOver} />
-          <Route path="/game" component={Home} />{" "}
+          <Route path="/game" component={Home} />
         </Switch>
         game
       </Container>

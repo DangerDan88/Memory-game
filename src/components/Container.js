@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ContainerStyles = styled.div`
   h1 {
-    color: green;
+    color: var(--main);
   }
 `;
 

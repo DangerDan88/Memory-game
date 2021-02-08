@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-root: {
+html {
     --main: #77b300;
     --black: #161515;
     --white: #fff;
