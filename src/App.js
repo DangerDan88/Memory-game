@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import GlobalStyles from "../src/GlobalStyles";
+import Container from "../src/components/Container";
+import Header from "../src/components/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <GlobalStyles />
+      <Header />
+      <Container>
+        <Switch>
+          {" "}
+          <Route path="/game" component={Game} />
+          <Route path="/game" component={HighScores} />
+          <Route path="/game" component={GameOver} />
+          <Route path="/game" component={Home} />{" "}
+        </Switch>
+        game
+      </Container>
+    </Router>
   );
 }
 
