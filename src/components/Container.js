@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const ContainerStyles = styled.div`
@@ -8,6 +8,8 @@ const ContainerStyles = styled.div`
 `;
 
 export default function Container() {
+  const [score, setScore] = useState(0);
+
   return (
     <ContainerStyles>
       <h1>Memory Game</h1>
